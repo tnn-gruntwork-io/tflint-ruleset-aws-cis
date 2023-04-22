@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/gruntwork-io/tflint-ruleset-aws-cis/rules"
+	"github.com/tnn-gruntwork-io/tflint-ruleset-aws-cis/rules"
 	"github.com/terraform-linters/tflint-plugin-sdk/plugin"
 	"github.com/terraform-linters/tflint-plugin-sdk/tflint"
 )

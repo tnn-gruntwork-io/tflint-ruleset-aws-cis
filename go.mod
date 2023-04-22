@@ -1,4 +1,4 @@
-module github.com/gruntwork-io/tflint-ruleset-aws-cis
+module github.com/tnn-gruntwork-io/tflint-ruleset-aws-cis
 
 go 1.19
 
