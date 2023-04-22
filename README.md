@@ -3,7 +3,7 @@
 ![CIS AWS Foundations Benchmark Version](https://img.shields.io/badge/CIS%20benchmark%20version-1.5.0-green)
 ![https://gruntwork.io/?ref=repo_cis_compliance_aws"](https://img.shields.io/badge/maintained%20by-gruntwork.io-%235849a6.svg)
 
-Tflint rules for CIS AWS Foundations Benchmark compliance checks. These rules work in addition to the recommendations from [Gruntwork's CIS Service Catalog](https://github.com/gruntwork-io/terraform-aws-cis-service-catalog).
+Tflint rules for CIS AWS Foundations Benchmark compliance checks. These rules work in addition to the recommendations from [Gruntwork's CIS Service Catalog](https://github.com/tnn-gruntwork-io/terraform-aws-cis-service-catalog).
 
 > :warning: **This repository is a WIP. It only contains one single rule so far, to validate Security Groups, that is hard to enforce in any other way ([see Rules section](#rules)). In the future, we may add other CIS AWS Foundations Benchmark rules.**
 
@@ -22,7 +22,7 @@ plugin "aws-cis" {
   enabled = true
 
   version = "<VERSION>"
-  source  = "github.com/gruntwork-io/tflint-ruleset-aws-cis"
+  source  = "github.com/tnn-gruntwork-io/tflint-ruleset-aws-cis"
 }
 ```
 
@@ -45,13 +45,13 @@ terraform {
 }
 ```
 
-In the root of the Terragrunt project, add a `.tflint.hcl` file, replacing `<VERSION>` below with the latest version from the [releases page](https://github.com/gruntwork-io/tflint-ruleset-aws-cis/releases):
+In the root of the Terragrunt project, add a `.tflint.hcl` file, replacing `<VERSION>` below with the latest version from the [releases page](https://github.com/tnn-gruntwork-io/tflint-ruleset-aws-cis/releases):
 
 ```hcl
 plugin "aws" {
     enabled = true
     version = "<VERSION>"
-    source  = "github.com/gruntwork-io/tflint-ruleset-aws-cis"
+    source  = "github.com/tnn-gruntwork-io/tflint-ruleset-aws-cis"
 }
 ```
 
@@ -85,7 +85,7 @@ $ tflint
 
 ### Manual release
 
-**NOTE:** This project doesn't have automated releases at the moment (due to limitations of our GitHub org with GitHub actions) and does not sign the binaries (as `tflint` doesn't currently check signatures for plugins). [See this Slack thread for more info](https://gruntwork-io.slack.com/archives/C046S2PDWP8/p1672915001156189).  
+**NOTE:** This project doesn't have automated releases at the moment (due to limitations of our GitHub org with GitHub actions) and does not sign the binaries (as `tflint` doesn't currently check signatures for plugins). [See this Slack thread for more info](https://tnn-gruntwork-io.slack.com/archives/C046S2PDWP8/p1672915001156189).  
 
 In order to release the binaries, this project uses [goreleaser](https://goreleaser.com/) ([install instructions](https://goreleaser.com/install/)).
 
